@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y fondo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: #555 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Form Controls */
+form select,
+form input {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form select:focus,
+form input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+/* Contenedores y cards */
+.bg-white {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff !important;
+  border-radius: 12px;
+  padding: 1.5rem !important;
+}
+
+.bg-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Cards de proceso */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+}
+
+.card-title {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #eee;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer p a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #0d6efd;
+}
+
+/* Videos e imágenes en cards */
+.card-body video,
+.card-body img {
+  border-radius: 10px;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Animación entrada */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#contenedorProcesos > div {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+}
+
+/* Modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .bg-white {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0;
+  }
+
+  form select,
+  form input {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #444;
+  }
+
+  .navbar,
+  footer {
+    background-color: #1a1a1a !important;
+  }
+
+  .nav-link {
+    color: #bbb !important;
+  }
+
+  .nav-link.active,
+  .nav-link:hover {
+    color: #0d6efd !important;
+  }
+
+  footer a {
+    color: #aaa;
+  }
+
+  footer a:hover {
+    color: #0d6efd;
+  }
+}

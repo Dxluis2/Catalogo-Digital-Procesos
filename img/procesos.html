@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Procesos | Área Calidad</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/estilosPros.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="Logo de Comercializadora Que Barato" width="200" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active fw-semibold text-primary" aria-current="page" href="procesos.html">Procesos</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- FILTROS -->
+<main class="container my-5">
+  <section class="bg-white rounded shadow-sm p-4 mb-4">
+    <form class="row g-3 align-items-center" aria-label="Formulario de filtrado de procesos">
+      <div class="col-md-6">
+        <label for="categoria" class="form-label">Categoría:</label>
+        <select id="categoria" class="form-select">
+          <option value="">Seleccionar equipo</option>
+          <option value="laptops">Laptops</option>
+          <option value="cpu">CPU</option>
+          <option value="camaras">Cámaras</option>
+          <option value="hornos">Hornos</option>
+          <option value="teclado">Teclados</option>
+          <option value="impresoras">Impresoras</option>
+          <option value="monitores">Monitores</option>
+          <option value="switch">Switch</option>
+          <option value="quesera">Queseras</option>
+          <option value="scanners">Scanners</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="busqueda" class="form-label">Buscar proceso:</label>
+        <input type="text" id="busqueda" class="form-control" placeholder="Buscar por título">
+      </div>
+    </form>
+  </section>
+
+  <!-- RESULTADO DEL PROCESO -->
+  <section class="bg-white rounded shadow-sm p-4">
+    <h2 id="tituloProceso" class="text-primary mb-3">Selecciona una categoría</h2>
+    <div id="mediaProceso" class="mb-3"></div>
+    <p id="descripcionProceso" class="text-muted"></p>
+
+    <!-- BOTONES -->
+    <div class="d-flex justify-content-between mt-4">
+      <button id="btnAtras" class="btn btn-outline-primary px-4" disabled><i class="fa fa-arrow-left me-2"></i> Atrás</button>
+      <button id="btnSiguiente" class="btn btn-primary px-4" disabled>Siguiente <i class="fa fa-arrow-right ms-2"></i></button>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer bg-dark text-white pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- LOGO -->
+      <div class="col-md-4 mb-4">
+        <img src="img/logo.png" alt="Logo de la empresa" width="150" />
+        <p class="mt-3">Comprometidos con la calidad y el mejor servicio.</p>
+      </div>
+
+      <!-- REDES -->
+      <div class="col-md-8 mb-4">
+        <h5 class="mb-3">Síguenos</h5>
+        <p>
+          <a href="https://www.facebook.com/comercializadoraQB" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="https://www.tiktok.com/place/Comercializadora-Que-Barato-21568226335938496?language=en" class="text-white me-3"><i class="bi bi-tiktok"></i> TikTok</a>
+          <a href="https://www.instagram.com/cqbarato/" class="text-white"><i class="bi bi-instagram"></i> Instagram</a>
+        </p>
+      </div>
+    </div>
+    <hr class="border-secondary" />
+    <p class="text-center mb-0 small">© 2025 Comercializadora Que Barato. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

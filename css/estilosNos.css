@@ -1,0 +1,140 @@
+/* Banner */
+header#nosotros {
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  animation: fadeInDown 1.2s ease-in-out;
+}
+/* Banner */
+header#contacto {
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  animation: fadeInDown 1.2s ease-in-out;
+}
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y fondo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #cbc1c1;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar .navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.navbar .nav-link {
+  color: #004080;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #007bff;
+}
+/* Sección Nosotros */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Encabezados */
+h1 {
+  font-weight: 700;
+  color: #ffffff;
+}
+ h2, h3, h4, h5{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+ }
+
+p {
+  font-size: 1.1rem;
+  color: #000000;
+}
+/* Íconos de valores */
+.fa-3x {
+  color: #007bff;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.fa-3x:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  background-color: #002244;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Imagen del equipo */
+img.img-fluid.rounded.shadow {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(137, 33, 33, 0.15);
+  margin-top: 30px;
+}
+.footer {
+  background-color: #0049e5;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer h5 {
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #0d6efd;
+  transition: color 0.3s;
+}
+
+.footer hr {
+  margin-top: 20px;
+  border-color: #f9f9f9;
+}
+
+.footer img {
+  border-radius: 8px;
+}
+.footer p { 
+    
+  font-size: 1.1rem;
+  color: #ededed;
+
+}
+.vo a{
+  background-color: #004080;
+  font-family: 'Courier New', Courier, monospace;
+}
+.card-subtitle{
+  color: #000000;
+}

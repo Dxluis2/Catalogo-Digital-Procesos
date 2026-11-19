@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  scroll-behavior: smooth;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+/* Banner */
+header#inicio {
+  background: linear-gradient(120deg, #007bff, #0056b3);
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  animation: fadeInDown 1.2s ease-in-out;
+}
+
+/* Botón scroll-top */
+.btn-scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  animation: bounceIn 0.6s ease forwards;
+}
+.btn-scroll-top:hover {
+  background-color: #084298;
+}
+
+/* Cards */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  animation: fadeInUp 1s ease forwards;
+  background-color: #ffffff;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 40px 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.footer a {
+  color: #ffffffcc;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar-brand img {
+  max-height: 80px;
+}
+
+/* AOS Animation Delay */
+[data-aos] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+/* Secciones */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  header#inicio h1 {
+    font-size: 2rem;
+  }
+  header#inicio p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animaciones adicionales */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .card {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+  .navbar,
+  .footer {
+    background-color: #1c1c1c;
+  }
+  .btn-scroll-top {
+    background-color: #0d6efd;
+  }
+  .btn-scroll-top:hover {
+    background-color: #084298;
+  }
+  a {
+    color: #90caf9;
+  }
+  a:hover {
+    color: #bbdefb;
+  }
+}
